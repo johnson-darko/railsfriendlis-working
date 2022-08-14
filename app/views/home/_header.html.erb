@@ -14,21 +14,21 @@
                 <div class="navbar-nav">
 
 
-                <%# if user_signed_in?%>
+                <% if user_signed_in?%>
 
 
-                 <%= link_to 'About', home_about_path, class: "nav-link", class: "btn btn-sm" %>
-                  <%= link_to 'New', posts_path, class: "nav-link", class: "btn btn-sm"%>
+                 <%#= link_to 'About', home_about_path, class: "nav-link", class: "btn btn-sm" %>
+                  <%= link_to 'Post', posts_path, class: "nav-link", class: "btn btn-sm"%>
                   <%= link_to 'Add Friend', new_friend_path, class: "nav-link", class: "btn btn-sm" %>
                     <%= link_to 'Account', edit_user_registration_path, class: "nav-link", class: "btn btn-sm" %>
                     <%= button_to 'Sign Out', destroy_user_session_path, method: :delete, class: "nav-link", class: "btn btn-sm" %>
 
-                      <%# else %>
+                      <% else %>
 
                     <%= link_to 'Home', root_path, class: "nav-link", class: "btn btn-sm" %>
                       <%= link_to 'Sign In',  new_user_session_path, class: "nav-link", class: "btn btn-sm" %>
                      <%= link_to 'Sign Up', new_user_registration_path, class: "nav-link", class: "btn btn-sm" %>
-                    <%# end %>
+                    <% end %>
 
 
                 </div>

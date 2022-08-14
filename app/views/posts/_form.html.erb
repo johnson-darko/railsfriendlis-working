@@ -20,8 +20,11 @@
     <%= form.label :body %>
     <%= form.rich_text_area :body %>
   </div>
-
+  <div>
+     <%= form.number_field :user_id, id: :post_user_id, class:"form-control", value: current_user.id, type: :hidden %>
+  </div>
 <br/>
+
   <div>
     <%= form.submit %>
   </div>
