@@ -89,3 +89,4 @@ group :test do
   gem "webdrivers"
 end
 gem "cssbundling-rails"
+gem "cssbundling-rails"
