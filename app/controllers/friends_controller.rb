@@ -39,7 +39,7 @@ class FriendsController < ApplicationController
 
   # PATCH/PUT /friends/1 or /friends/1.json
   def update
-    respond_to do |format|
+--    respond_to do |format|
       if @friend.update(friend_params)
         format.html { redirect_to friend_url(@friend), notice: "Friend was successfully updated." }
         format.json { render :show, status: :ok, location: @friend }
